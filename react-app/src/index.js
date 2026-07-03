@@ -124,18 +124,18 @@ function DisplayTimeLeft(time){ //makes the value of how long is left of the tim
   var timeLeftBreakdown = timeLeftBreak(time);
   return <table align="center" cellPadding={15}>
     <tr>
-      <th>Seconds</th>
-      <th>Minutes</th>
-      <th>Hours</th>
-      <th>Days</th>
       <th>Weeks</th>
+      <th>Days</th>
+      <th>Hours</th>
+      <th>Minutes</th>
+      <th>Seconds</th>
     </tr>
     <tr>
-      <td>{String(timeLeftBreakdown["seconds"])}</td>
-      <td>{String(timeLeftBreakdown["minutes"])}</td>
-      <td>{String(timeLeftBreakdown["hours"])}</td>
-      <td>{String(timeLeftBreakdown["days"])}</td>
       <td>{String(timeLeftBreakdown["weeks"])}</td>
+      <td>{String(timeLeftBreakdown["days"])}</td>
+      <td>{String(timeLeftBreakdown["hours"])}</td>
+      <td>{String(timeLeftBreakdown["minutes"])}</td>
+      <td>{String(timeLeftBreakdown["seconds"])}</td>
     </tr>
   </table>;
 
@@ -203,18 +203,18 @@ function TimerAmount(props){ //used to set how long the timer times for
     <div class="col-xs-2">
         <table align="center">
           <tr>
-            <th>Seconds</th>
-            <th>Minutes</th>
-            <th>Hours</th>
-            <th>Days</th>
             <th>Weeks</th>
+            <th>Days</th>
+            <th>Hours</th>
+            <th>Minutes</th>
+            <th>Seconds</th>
           </tr>
           <tr>
-            <td><input className="form-control" id="seconds" type="number" name="seconds" min="0"></input></td>
-            <td><input className="form-control" id="minutes" type="number" name="minutes" min="0"></input></td>
-            <td><input className="form-control" id="hours" type="number" name="hours" min="0"></input></td>
-            <td><input className="form-control" id="days" type="number" name="days" min="0"></input></td>
             <td><input className="form-control" id="weeks" type="number" name="weeks" min="0"></input></td>
+            <td><input className="form-control" id="days" type="number" name="days" min="0"></input></td>
+            <td><input className="form-control" id="hours" type="number" name="hours" min="0"></input></td>
+            <td><input className="form-control" id="minutes" type="number" name="minutes" min="0"></input></td>
+            <td><input className="form-control" id="seconds" type="number" name="seconds" min="0"></input></td>
           </tr>
       </table>
       </div>
